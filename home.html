@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<title>Stray Animals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>Stray</b> Animals</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#notice" class="w3-bar-item w3-button">Notice</a>
+      <a href="#search" class="w3-bar-item w3-button">Search</a>
+      <a href="#love" class="w3-bar-item w3-button">Love</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="css/edm02.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>愛</b></span> <span class="w3-hide-small w3-text-light-grey">牠,請別遺棄牠</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="notice">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">認養流程及須知</h3>
+    <h5>♥ 認養民眾須年滿20歲及攜帶身分證<br>
+        ♥ 免費認養,犬貓皆實施植入晶片寵物登記及注射狂犬病疫苗<br>
+        ♥ 本認養公告之犬貓均已絕育可供認養,採現場辦理認養手續為主恕不受理預約<br>
+    </h5>
+  </div>
+  <div class="w3-container w3-padding-32" id="search">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">待領養檢索</h3>
+  </div>
+  
+    <form class="w3-container w3-card-4" method="get" action="test.php">
+      <div class="w3-bar">
+          <div class="w3-bar-item"><p>動物編號</p></div>
+          <div class="w3-bar-item"><input class="w3-input w3-border w3-animate-input" type="text" name="num" style="width:60%" >
+          </div>
+        </div>
+          
+      <div class="w3-bar">
+        <div class="w3-bar-item">
+        <p>性別</p></div>
+        <div class="w3-bar-item">
+          <p>
+          <input class="w3-check" type="checkbox" name="male">
+          <label>公</label></p>
+        </div>
+          <div class="w3-bar-item">
+          <p>
+          <input class="w3-check" type="checkbox" name="female">
+          <label>母</label></p>
+          </div>
+       </div>
+        
+        <div class="w3-bar">
+            <div class="w3-bar-item">
+                <p>年齡</p>
+            </div>
+            <div class="w3-bar-item">
+                <select style="height:50px;width:100px" name="age">
+                    <option value="YD">幼犬</option>
+                    <option value="DD">成犬</option>
+                    <option value="YC">幼貓</option>
+                    <option value="DC">成貓</option>
+                </select>
+            </div>
+            
+        </div>
+        
+        <div class="w3-bar">
+            <div class="w3-bar-item">
+                <p>毛色</p>
+            </div>
+            <div class="w3-bar-item">
+                <select style="height:50px;width:100px" name="color">
+                    <option value="黑色">黑色</option>
+                    <option value="黃色">黃色</option>
+                    <option value="白色">白色</option>
+                    <option value="米色">米色</option>
+                    <option value="棕色">棕色</option>
+                    <option value="黃白">黃白</option>
+                    <option value="黑白">黑白</option>
+                    <option value="虎斑">虎斑</option>
+                    <option value="咖啡">咖啡</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="w3-bar">
+            <div class="w3-bar-item">
+                <p>體型</p>
+            </div>
+            <div class="w3-bar-item">
+                <select style="height:50px" name="size">
+                    <option value="blawhite">迷你型(3公斤以下)</option>
+                    <option value="ti">小型(3-13公斤)</option>
+                    <option value="coffee">中型(13-23公斤)</option>
+                    <option value="other">大型(23公斤以上)</option>
+                </select>
+            </div>
+            
+            <div class="w3-bar">
+                <div class="w3-bar-item">
+                    <p><button class="w3-button w3-blue-grey"  style="width:80px">送出</button></p>  
+                </div>
+                <div class="w3-bar-item">
+                    <p><button class="w3-button w3-blue-grey"  style="width:80px">清除</button></p>
+                </div>
+            </div>
+            
+        </div>
+  </form>
+  
+  <div class="w3-container w3-padding-32" id="love">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">待領養</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">10606060002</button></div>
+        <img src="css/76139465671.PNG" alt="House" style="width:100%;height:400px">
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 母</p>
+                            <p>毛色 : 黑色</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10606060002</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">10606050002</button></div>
+        <img src="css/7691415971.PNG" alt="House" style="width:100%;height:400px">
+          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 成犬</p>
+                            <p>性別 : 公</p>
+                            <p>毛色 : 白色</p>
+                            <p>體型 : 小型(3-13公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10606050002</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">10606010027</button></div>
+        <img src="css/7612114471.PNG" alt="House" style="width:100%;height:400px">
+          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 公</p>
+                            <p>毛色 : 咖啡</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10606010027</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">10606010024</button></div>
+        <img src="css/7691471471.PNG" alt="House" style="width:100%;height:400px">
+          <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 公</p>
+                            <p>毛色 : 黑棕</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 我在南區 迦南動物醫院 04-22651515</p>
+                            <p>編號 : 10606010024</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4" data-whatever="@mdo">10606010011</button></div>
+        <img src="css/7681553871.PNG" alt="House" style="width:99%;height:400px">
+          <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 成犬</p>
+                            <p>性別 : 母</p>
+                            <p>毛色 : 黑棕</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10606010011</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+ 
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo">10605310023</button></div>
+        <img src="css/76121122471.PNG" alt="House" style="width:99%;height:400px">
+          <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 母</p>
+                            <p>毛色 : 黑色</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10605310023</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+  
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6" data-whatever="@mdo">10605310008</button></div>
+        <img src="css/7691345771.PNG" alt="House" style="width:99%;height:400px">
+          <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 母</p>
+                            <p>毛色 : 虎斑</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10605310008</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+   
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7" data-whatever="@mdo">10605310007</button></div>
+        <img src="css/76913551871.PNG" alt="House" style="width:99%;height:400px">
+          <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">message</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+                            <p>年齡 : 幼犬</p>
+                            <p>性別 : 母</p>
+                            <p>毛色 : 黑色</p>
+                            <p>體型 : 中型(13-23公斤)</p>
+                            <p>絕育 : 已絕育</p>
+                            <p>備註 : 南屯園區</p>
+                            <p>編號 : 10605310007</p>
+						</div>
+						<div class="form-group">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+      </div>
+    </div>
+  </div>
+    </div>
+  <!-- About Section -->
+  <!--<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+ <!-- <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<!--<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
+
+<!-- Footer -->
+<!--<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<!--<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

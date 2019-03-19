@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#demo {
+    width: 620px;
+    height: 350px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px #555555;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+</style>
+
+<script>
+
+
+var x=["https://pmchollywoodlife.files.wordpress.com/2017/08/ariana-grande-bio.jpg?w=620","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsTxzFOXjrQDed7OXyoc-sKGg-jR0ew54RuVeg0pw-ceU3fcO3Nw","https://pbs.twimg.com/media/DJBVPLAV4AAicgC.jpg"];
+var y=0;
+function f(n){
+y=y+n;
+document.getElementById("demo").innerHTML = '<img src="'+x[y]+'"width="100%">';
+}
+
+</script>
+</head>
+<body>
+
+
+<div id="demo"><img src="https://pmchollywoodlife.files.wordpress.com/2017/08/ariana-grande-bio.jpg?w=620" alt="Ariana"></div>
+
+<a href="javascript:f(-1)">pre</a>
+<a href="javascript:f(1)">next</a>
+
+<div>
+<p>so doope</p>
+</div>
+
+
+
+</body>
+</html>
